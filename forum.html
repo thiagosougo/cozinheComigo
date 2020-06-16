@@ -1,0 +1,188 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="estilo.css">
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Jost:wght@500&family=Montserrat&family=Prompt:wght@500&display=swap" rel="stylesheet">    <script src="https://kit.fontawesome.com/53939a9459.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@500&family=Pacifico&family=Quicksand:wght@300;500&display=swap" rel="stylesheet">
+        <title>Fórum</title>
+    </head>
+
+    <body>
+        <header class="header">
+            <a href="index.html"><img src="imagens/logocc.png"></a>
+
+
+            <div class="container_nav">
+                <input type="checkbox" id="menuToggle">
+                <label for="menuToggle" class="menu-icon">
+                    <i class="fa fa-bars"></i>
+                    <i class="fa fa-times-circle"></i>
+                </label>
+
+                <nav class="nav menu1">
+                    <div class="centralizarMenu">
+                        <a class="nav1 nav-link" href="conta.html"><i class="fa fa-user-alt"></i></a>
+                        
+                        <p><a class="nav-link" href="registrar.html">Registre-se ou</a><a class="navp1" href="login.html">entre em sua conta</a></p>
+                        <div class="center">
+                            <form class="form-inline my-2 my-lg-0">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Receita/Ingredientes" aria-label="Search">
+                                <button class="pesquisa btn my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+                            </form>
+                        </div>
+                        <a class="nav-link" href="ingredientes.html">Ingredientes</a>
+                        <a class="nav-link" href="cadastrar.html">Envie sua receita</a>
+                        <a class="nav-link" href="forum.html">Fórum</a>
+                    </div>
+                 </nav>
+                 </div>
+                 
+        </header> 
+        
+<body onload="init()">
+
+    <div class="corpo">
+        <div class="ajustarConteudo1">
+        <h2>Fórum</h2>
+    
+        <div class="container">
+    
+        <div class="row">
+            <div class="campoInfos col-sm-12">
+                <div id="table-infos">
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    
+            <form id="form-info">
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label class="tituloForm" for="inputNome">Nome (*)</label>
+                        <input type="text" class="form-control form-control1" id="inputNome" required placeholder="Como você prefere ser chamado(a)?">
+                    </div>
+                
+                    <div class="col-sm-6">
+                        <label class="tituloForm" for="inputTitulo">Título (*)</label>
+                        <input type="text" class="form-control form-control1" id="inputTitulo" required placeholder="Do que se trata o assunto?">
+                    </div>
+                </div>
+                <div class="form-group row">    
+                    <div class="col-sm-12">
+                        <label class="tituloForm" for="inputMensagem">Mensagem (*)</label>
+                        <textarea type="text" class="form-control form-control1" id="inputMensagem" required placeholder="Compartilhe conosco as suas dúvidas, experiências, dicas, etc!"></textarea>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-4">
+                        <small>(*) Campos obrigatórios</small>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="msg" class="col-sm-10 offset-sm-1 ">
+
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-12">
+                        <input type="button" class="btn btn-success botaoInserir" id="btnInsert" value="Postar mensagem no fórum">
+                    </div>
+                </div>
+                <a href="comentarioForum.html"><input type="button" class="btn btn-success botaoInserir botaoComentarioForum" id="btnInsert" value="Visualizar comentários"></a>
+
+            </form>
+            
+        </div>        
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+            function exibeForum() {
+                // Remove todas as linhas do corpo da tabela
+                $("#table-infos").html("");
+    
+                // Popula a tabela com os registros do banco de dados
+                for (i = 0; i < db.data.length; i++) {
+                    let infos = db.data[i];    
+                    $("#table-infos").append(`<div class="espaco row col-12">
+                                                    <div class="infoPrincipais"><p class="nomeUsuario">${infos.nome} </p>
+                                                    <p class="nomeTitulo">  ${infos.titulo} </p></div>
+                                                    <p class="mensagemForum col-12"> ${infos.mensagem}</p>
+                                                    <a class="col-12 iconeComent" href="comentarioForum.html"><i class="col-12 far fa-comments"></i></a>                                       
+                                                    </div>
+                                                </div>`);
+                }
+            }
+    
+            function init() {
+                // Adiciona funções para tratar os eventos 
+                $("#btnInsert").click(function () {
+                    // Verfica se o formulário está preenchido corretamente
+                    if (!$('#form-info')[0].checkValidity()) {
+                        displayMessage("Não entendi... reveja se digitou os dados corretamente.");
+                        return;
+                    }
+    
+                    // Obtem os valores dos campos do formulário
+                    let campoNome = $("#inputNome").val();
+                    let campoTitulo = $("#inputTitulo").val();
+                    let campoMensagem = $('#inputMensagem').val();
+                    let campoTitComentario = $('#inputMensagem').val();
+                    let campoComentario = $('#inputCometario').val();
+                    let infos = { nome: campoNome, 
+                        titulo: campoTitulo, 
+                        mensagem: campoMensagem,
+                        };
+    
+                    insertContato(infos);
+    
+                    // Reexibe os infos
+                    exibeForum();
+    
+                    // Limpa o formulario
+                    $("#form-info")[0].reset();
+                });
+    
+               
+                // Oculta a mensagem de aviso após alguns segundos
+                $('#msg').bind("DOMSubtreeModified", function () {
+                    window.setTimeout(function () {
+                        $(".alert").fadeTo(500, 0).slideUp(500, function () {
+                            $(this).remove();
+                        });
+                    }, 5000);
+                });
+    
+                // Preenche o formulário quando o usuario clicar em uma linha da tabela 
+                $("#grid-infos").on("click", "tr", function (e) {
+                    let linhaContato = this;
+                    colunas = linhaContato.querySelectorAll("td");
+    
+                    $("#inputNome").val(colunas[1].innerText);
+                    $("#inputTitulo").val(colunas[2].innerText);
+                    $("#inputMensagem").val(colunas[6].innerText);
+                });
+    
+                exibeForum();
+            }
+        </script>
+
+      
+    </body>
+</html>

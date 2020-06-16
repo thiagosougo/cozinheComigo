@@ -1,0 +1,284 @@
+/*  GERAIS */
+body{background-color: #FFF864;}
+a{
+    color:white;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+}
+a:hover{color: black;text-decoration: none; }
+.main{margin-top: 140px;}
+.ajustarConteudo {margin-top: 140px; display: wrap; margin:0 auto; text-align: center; padding: 20px 20px 10px 0}
+.ajustarConteudo1 {margin-top: 150px !important; display: wrap; margin:0 auto; text-align: center;} 
+.corpo{margin-top: 140px; width: 100%; }
+.corpoAlinhar{ margin-left: 10px}
+.h3{padding: 25px}
+h2{font-family: 'Bebas Neue', cursive;}
+/* FIM GERAIS */
+
+/*header*/
+.header{
+    background-color: #FF362C;
+    position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px -250px;
+    color: white;
+    margin-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100% !important;
+    top: 0px;        
+    z-index: 999;
+}
+.header img{max-width: 100px; float: left; padding: 20px}
+
+#menuToggle {display: none;}
+.menu-icon {display: none;}
+.center, input{   
+    text-align: center;
+    display: wrap;
+    margin: 0 auto;
+}
+.centralizarMenu{display:wrap; margin: 0 auto}
+.menu1 {
+    margin-left: -320px;
+    display: flex;
+    position: fixed;
+    flex-wrap: wrap;
+    align-content: center;
+    top: 0px;
+    left: 320px;
+    width: 100%;
+    height: 0%;
+    background-color: rgba(255, 55, 44);
+    overflow: hidden;
+    -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    -ms-transition: height 0.3s;
+    -o-transition: height 0.3s;
+    transition: height 0.3s;
+}
+.nav1{margin-top: 120px; font-size: 50px}
+.nav2{font-size: 50px; margin-top: 20px}
+.navp1{margin-top: -20px}
+.menu1 a {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+.menu-icon {
+    width: 50px;
+    height: inherit;
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    line-height: 60px;
+    color: white;
+    z-index: 999;
+}
+
+#menuToggle:checked ~ label i:nth-child(2) {display: block;}
+#menuToggle:checked ~ label i:first-child {display: none;}
+#menuToggle:not(:checked) ~ label i:first-child {display: block;}
+#menuToggle:not(:checked) ~ label i:nth-child(2) {display: none;}
+#menuToggle:checked ~ nav {height: 100%;}
+.menu-icon i {font-size: 1.7em;}
+.pesquisa{background: #F0794E; display: wrap; margin: 0 auto; width: 50px}
+/*fim header*/
+
+/*Página inicial */
+.receita img{width: 300px; height: 300px}
+.receita{background-color: #F0794E; margin: 10px 10px 10px 0;  max-width:320px;  display:inline-block;} 
+.receita h6{padding:10px; font-family: 'Quicksand', sans-serif;}
+.receita h3{font-family: 'Pacifico', cursive; color: #C5EB62}
+.receita h3:hover{color: #4cb15b}
+.scroll::-webkit-scrollbar {background: #FF362C}
+.scroll::-webkit-scrollbar-thumb  {background-color: #F0794E;}
+.scroll::-webkit-scrollbar-button{background-color:none}
+/*Fim página inicial */ 
+
+/*Página receita*/ 
+.imagemReceita img{height: 300px; width: 300px}
+
+/*Fim página receita */
+
+
+@media screen and (min-width:1023px){
+.imagemReceita{float: left; margin-top: 20px}
+.descricaoReceita{width: 60%; background: #e0dfdf; height: 100%; font-weight: bold;  margin-left: 20px; padding: 15px; font-family: 'Quicksand', sans-serif;}
+.infosPrincipais{display: flex; flex-direction: row; justify-content: center;  }
+.listasUtensilios1{width: 100%; font-family: 'Raleway', sans-serif; display: wrap; margin: 0 auto; padding-right: 15px }
+.listasUtensilios{width: 65%; margin: 0 auto;}
+.botoesItens{width: 100%;  margin: 0 auto}
+.botaoFinal2 {margin-left: 50px;}
+.forum{width: 40%;}
+.center{padding-bottom: 20px;}
+.corpo{width:100%;}
+.linkComentario{float: right; padding: 0 50px 50px 0px }
+.wrapper{ 
+        margin: auto; 
+        text-align: center; 
+        position: relative;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        padding-top: 5px;}
+        .scroll { 
+            max-width: 1200px!important;
+            overflow-x: scroll;
+            height: 428px;
+            white-space:nowrap;
+        } 
+    }
+    @media screen and (min-width:300px) and (max-width:980px){
+        .pesquisa{background: #F0794E; display: wrap; margin: 0 auto; width: 100%}
+        .receitaCompleta{ width: 100%; }
+        .labelLista{width: 100%}
+        .corpo{padding: 0}
+        .listasUtensilios, .listasUtensilios1{padding-left: 10px}
+        .wrapper{ 
+        display: wrap;
+        margin: auto; 
+        text-align: center; 
+        position: relative;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        padding-top: 5px;}
+ul{padding-left: 10px}        
+    .scroll { 
+        max-width: 330px;
+        overflow-x: scroll;
+        height: 430px;
+        white-space:nowrap;
+        padding-left: 10px}
+    .favoritos{clear: both; width: 100%}            
+    
+.imagemReceita img{display: wrap; margin: 0 auto; padding-left: 17px}
+.descricaoReceita{margin: 0px 0 0 20px; padding: 20px; background: #e0dfdf;font-family: 'Quicksand', sans-serif; font-weight: bold;  }
+.labelLista{width:100%; padding: 5px; display: block; margin: center;   }
+.checkLista input{width: 100px; margin-bottom: 20px}
+.checkLista input {padding-bottom: 50px}
+.botaoFinal2{width: 100%}
+}
+.labelLista{font-family: 'Quicksand', sans-serif;  }
+/* fim cards*/ 
+
+
+/* REGISTRO */
+.corpo1{ text-align: center; padding-top: 10px }
+.corpoRegistrar{width: 340px; padding:10px; font-family: 'Quicksand', sans-serif;}
+.formInscricao{margin: auto; text-align: center; position: relative;}
+.formNome, .formEmail, .formSenha, .formSenha1{padding: 10px; margin-top: 20px} 
+.formNome:hover, .formEmail:hover, .formSenha:hover, .formSenha1:hover{ font-size: 25px;  font-weight: bold;}
+#txt_login, #txt_nome, #txt_email, #txt_senha, #txt_senha2, #username, #password{text-align: left; border: 1px solid #F0794E; padding: 2px}
+.notificacoes, .termos{width: 90%; float: left; position: relative; display: wrap; text-align: justify}
+.termosUso{color: black}
+.checkboxes{text-align: left; width: 100%; margin-top: 10px }
+input[type=checkbox]{ float: right; width: 10%; margin-top: 20px}
+label{width: 100%; font-weight: bold; }
+.criarConta{text-align: center; border: none; font-weight: bold; background: none; width: 100%; padding: 20px;  font-family: 'Quicksand', sans-serif; text-transform: uppercase; color: black}
+.termos, .notificacoes{padding-top: 10px}
+.registrarConta{color: rgb(110, 102, 102)}
+hr{border: 0.6px solid grey; clear: both}
+.senha:hover{background: none;}
+/*fim registro*/
+
+/* CONTA */
+.foto{text-align: center; margin-bottom: 20px}
+.infos{width: 80%; display: wrap; margin: 0 auto}
+/* CONTA */
+
+
+/* FAVORITOS */
+/* FIM FAVORITOS */
+
+/*INGREDIENTES*/
+.barraIngrediente{width: 80%;  display: inline; border-radius: 0.8rem; border:  2px solid black; height: 45px; }
+.botaoPesquisar{background-color: #F0794E; border: 2px solid black; padding: 8px; margin-left: 10px; border-radius: 0.8rem;}
+.pesquisaIngrediente{margin: 0 auto; padding-left: 20px}
+/*FIM INGREDIENTES*/
+
+/* VISUALIZAR RECEITA */
+.divisaoReceita{width: 40%; margin-top: -10px}
+.h6Receita{padding-left: 20px}
+.labelCronometro{margin: 20px 0 40px 0}
+.checkCronometro{float: left; width: 40%; background: #C5EB62; border: 1px solid black; border-radius: 0.6rem}
+.botaoCronometro{color: black; float: right; border: none; padding: 2px 5px 2px 5px; font-weight: bold; background-color: #63FF7B;}
+.botaoCronometro:hover{background: none !important;}
+.receitaComentarios{text-align: center; font-family: 'Quicksand', sans-serif;}
+.botaoComentario{margin:0 20px 20px 20px; float: right; background: none; border: 2px solid black}
+.botaoComentario:hover{width: 15%}
+.botaoFinal{clear: both;}
+.botaoFinal3{color: black}
+.botaoFinal2 { background: none; border: none;  margin-bottom: 20px }
+.botaoFinal2:hover{border-radius: 0.8rem}
+.botaoFinal{font-family: 'Quicksand', sans-serif;}
+.comentarioReceita{margin-bottom: 34px}
+.linkComentario{font-size: 1.5rem; color: black; }
+.linkComentario:hover{color: white}
+/* FIM VISUALIZAR RECEITA */
+
+/* FÓRUM */
+
+label {
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+}
+::placeholder {
+    color: rgb(190, 190, 190) !important;
+}
+.form-control1::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:  #4cb15b !important;
+    font-family: 'Quicksand', sans-serif;
+}
+:-moz-placeholder { /* Mozilla Fireox 4 to 18 */
+    color:  black  !important;
+ }
+
+ #msg {
+     height: 85px;
+ }
+ #grid-contatos tbody {
+     cursor: pointer;
+ }
+ .espaco{background-color: #C5EB62; margin-top: 20px; padding: 30px; font-family:  'Montserrat', sans-serif;}
+ .espaco div{width: 100%}
+.comentario input, button{float: right;}
+.mensagemForum{float: right; text-align: center}
+.nomeUsuario{font-style: italic; text-align: center}
+.nomeTitulo{text-align: center; font-weight: bold; }
+.infoPrincipais{margin: 0 auto}
+.campoInfos{margin-left: 25px}
+.botaoInserir{background-color: #F0794E !important; border: none; font-family: 'Quicksand', sans-serif; float: right}
+.form-control1{border: 2px solid #4cb15b !important; text-align: left}
+li{list-style: none; padding-top: 10px}
+.botaoComentarioForum{margin-bottom: 20px}
+.fa-comments{float: right; font-size: 1.6rem; color: #F0794E; font-weight: bold;}
+.iconeComent a{text-align: right; color: #F0794E!important}
+.fa-comments:hover{color: #FF362C}
+.tituloForm{text-align: left}
+/* FIM FÓRUM */
+
+/*Comentarios fórum*/
+.iconeUsuario{font-size: 1.9rem; margin-right:  20px; color: #4cb15b}
+.infosUser{margin-top: 40px; color: #4cb15b; font-weight: bold}
+.espaco1{background-color: #F0794E;border-radius: 1.8rem; text-align: left; margin-bottom: 40px; width: 96%; float: right; padding: 15px; font-family:  'Montserrat', sans-serif;}
+.nomeUser{font-family: 'Quicksand', sans-serif;}
+.espaco1 p{font-weight: bold;}
+.tituloComent p{font-weight: bold; text-align: left}
+.form-control2{border: 2px solid #F0794E !important; text-align: left; }
+.botaoEnviarComent{background-color: #4cb15b !important;}
+.form-control2::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:  #F0794E !important;
+    font-family: 'Quicksand', sans-serif;
+}
+/*Fim comentários fórum*/

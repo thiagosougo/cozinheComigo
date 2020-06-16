@@ -1,0 +1,180 @@
+body{
+    background-color: #FFF864;
+}
+
+header h1{
+    padding: 5px 15px 5px 5px;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    color: white;
+}
+
+.header{
+    background-color: #FF362C;
+    display: flex;   
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    top: 0px;        
+    z-index: 999;
+}
+.fa-arrow-left{padding:15px; color: white}
+.fa-arrow-left:hover{color:#F0794E}
+.userform{
+    padding: 20px;
+}
+.alinhamento{
+    margin: 15px 0 15px;
+}
+
+.adicionar {width:100%; text-align: center}
+input[type='file'] {
+    display: none
+  }
+  
+  /* Aparência que terá o seletor de arquivo */
+  label {
+    background-color: #F0794E;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    padding: 6px 20px;
+   
+  }
+
+.custom-file-label {border-color: #F0794E;}
+
+#customFileLangHTML input{background-color: #F0794E;}
+
+.input-group-text, .card {border:none; font-weight: bold;}
+.form-control{border: solid 1.45px #F0794E}
+
+.preparo p{
+    font-family: 'Jost', sans-serif;
+    text-align: center;
+    font-size: 200% ;
+    padding: 25px 0 30px 0 ;
+}
+
+.cronometro, .passos{
+    float: right;
+    clear: both;
+    margin: 10px 0 10px;
+}
+.passos {margin-bottom: 30px; background-color: #FF362C  !important; border: none}
+.passos:hover{ background-color: #F0794E !important; }
+
+.card{margin-top:10px; }
+.extras , .categorias, .enviar{
+    clear: both;
+}
+.imagem{
+    float: right;
+    margin: 15px;
+}
+.imagem i{
+    font-size: 200%;
+}
+.cor1, .adicionar{
+    background-color: #F0794E;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+}
+.botao{
+    font-family: 'Prompt', sans-serif;
+}
+.btn-secondary{background-color: #F0794E; border: none; float: right;}
+
+.mode a:hover{
+    background-color: #eba259;   
+}
+.cronometro{border:none; background: none;}
+
+/* FORMULÁRIOS */
+.btn_class{
+    float: right;
+    display: block;
+    background: #F0794E;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    width: 35px;
+    height: 35px;
+}
+.btn_class:hover{background-color: #eba259;}
+
+.content{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.content input{
+    padding: 0.5rem 1rem;
+    height: 40px;
+    outline: none;
+    font-family: 'Prompt', sans-serif;
+    color: #535353;
+    background-color: #ecb175;
+    font-size: 1rem;
+    margin: 0.25rem;
+    border-radius: 2px;
+    border: none;
+}
+
+.clicar input{
+    height: 40px;
+    width: 40px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    background-color: #eba259;
+}
+.clicar:hover{background-color: #F0794E;}
+
+li{padding: 10px; }
+
+#listaIngredientes, #listaUtensilios{color: #535353; font-family: 'Prompt', sans-serif; }
+
+.card-header{font-weight: bold; }
+
+/* FIM FORMÚLÁRIOS */
+@media screen and (max-width:600px){
+    p{
+        height: 40px;
+    }
+    .userform{
+        font-size: 88%;
+    }
+    .card{
+        font-size: 120%;
+    }
+
+}
+@media screen and (min-width:601px) and (max-width:1024px){
+    p{
+        height: 40px;
+        font-size: 20px;
+    }
+    .userform div{
+        font-size: 100%;   
+    }
+    .card{
+        font-size: 120%;}
+}
+@media screen and (min-width:1025px) and (max-width:1200px){
+    p{
+        height: 20px;
+    }
+    .userform div{
+            font-size: 250%;
+            
+    }
+    .card{
+        font-size: 180%;      
+    }
+}
