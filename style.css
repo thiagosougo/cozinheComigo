@@ -1,125 +1,192 @@
-body{
-    background-color: #FFF864;
-}
-
-header h1{
-    padding: 5px 15px 5px 5px;
-    text-align: center;
-    font-family: 'Dosis', sans-serif;
-    color: white;
-}
-
-.header{
-    background-color: #FF362C;
-    display: flex;   
+/* MENU NAVEGAÇÃO */
+#header_global{
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    top: 0px;        
+    position: fixed;
+    bottom: 0;
+    background-color: #F68D39;
     z-index: 999;
 }
-.fa-arrow-left{padding:15px; color: white}
-.fa-arrow-left:hover{color:#F0794E}
-.userform{
-    padding: 20px;
+.menuNavegacao{margin: 0 auto; text-align: center; font-size: 1.5rem; overflow: over;; 
 }
-.alinhamento{
-    margin: 15px 0 15px;
+.logo{display: none;}
+.logob{width: 100px; padding: 15px 0 15px 0}
+.receita{background-color: #F68D39; margin: 10px 10px 10px 0;  max-width:320px;  display:inline-block;} 
+
+/* FIM MENU NAVEGAÇÃO */
+
+
+/* GERAL */
+.corpo{margin-bottom: 100px}
+a{ color: rgb(70, 70, 70)}
+a:hover{color: black; text-decoration: none}
+.ajustarConteudo{ margin-bottom: 120px!important}
+h6{ text-transform: uppercase;}
+h5, .mensagemForumInicial{font-family: 'Questrial', sans-serif;}
+.mensagemForumInicial{font-weight: bold}
+h3, h2{font-family: 'Comfortaa'; }
+input[type="button"]:hover, button[type="button"]:hover, input[type="submit"]:hover{background: #FF362C}
+/* GERAL */
+
+
+/* CARDS RECEITAS PRINCIPAIS */
+.receita img{width: 300px; height: 310px; margin-bottom: 10px}
+.receita{background-color: #F68D39; margin: 10px 10px 10px 0;  max-width:320px;  display:inline-block;} 
+.receita h6{padding:10px; font-family: 'Montserrat', sans-serif;}
+.receita h3{font-family: 'Comfortaa'; font-size: 1.2rem}
+.scroll::-webkit-scrollbar {background: #FF362C}
+.scroll::-webkit-scrollbar-thumb  {background-color: #F68D39;}
+/* FIM CARDS RECEITAS PRINCIPAIS */
+
+/* CATEGORIAS */
+.categorias{margin: 0 auto; display: block; }
+.categorias i{font-size: 40px;  margin: 15px; background-color: #F68D39; padding: 25px; border-radius: 4rem;}
+.fa-birthday-cake, .fa-utensils{font-size:45px!important}
+.linha2, .linha3 {margin-top: 5px;}
+.linha a{font-family: 'Montserrat', sans-serif; text-transform: uppercase;font-weight: bold;}
+/* FIM CATEGORIAS */
+
+/* FÓRUM */
+.encapsular::-webkit-scrollbar {background: #FF362C}
+.encapsular::-webkit-scrollbar-thumb  {background-color: #F68D39;}
+.encapsular::-webkit-scrollbar-button{display: none}
+.encapsular{height: 220px; overflow-y: scroll; margin: 0 20px 0 20px;}
+.inicialForum{background-color: #F68D39; margin-top: 10px;  padding: 20px;  width: 96%}
+.titForum, .botForum{display: inline-block}
+.titForumInicial{margin-top: 30px }
+.titForum{margin-left: 30px; margin-top: -10px}
+.fa-comments{text-align: right; font-size: 1.6rem; font-weight: bold; padding-right: 40px}
+.botComent{    
+    margin-top: 20px;
+    border-radius: 0.5rem;
+    background-color: #F68D39;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    border: none;
+    padding: 15px;}
+.botForum{ 
+    border-radius: 0.5rem;
+    background-color: #F68D39;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    border: none;
+    padding: 15px;
+    height: inherit;
+    line-height: 15px;
+    display: block;
+    position: absolute;
+    right: 20px;
+    margin-top: -15px;
+}
+/* FIM FÓRUM */
+
+
+/* PESQUISA */
+.barraPesquisa{border: 2px solid #F68D39; width: 80%; font-family: 'Montserrat', sans-serif; text-align: center; padding: 15px; margin-right: 5px}
+.pesquisaReceita{ display: flex; flex-direction: row; margin-top: 10rem; justify-content: center; align-items: center;}
+#btnPesquisa{font-size: 1.3rem; color: #F68D39;}
+/* FIM PESQUISA */
+
+/* LOGIN */
+.formulario{margin-top: 70px}
+.itemForm{margin-top:-20px}
+.titForm{margin-top: 20px}
+.botUsuario button{ float: left}
+/* FIM LOGIN */
+
+/*FÓRUM*/
+label {
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
 }
 
-.adicionar {width:100%; text-align: center}
-input[type='file'] {
-    display: none
-  }
-  
-  /* Aparência que terá o seletor de arquivo */
-  label {
-    background-color: #F0794E;
-    border-radius: 3px;
-    color: #fff;
-    cursor: pointer;
-    padding: 6px 20px;
-   
-  }
-
-.custom-file-label {border-color: #F0794E;}
-
-#customFileLangHTML input{background-color: #F0794E;}
-
-.input-group-text, .card {border:none; font-weight: bold;}
-.form-control{border: solid 1.45px #F0794E}
-
-.preparo p{
-    font-family: 'Jost', sans-serif;
-    text-align: center;
-    font-size: 200% ;
-    padding: 25px 0 30px 0 ;
+.form-control1::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:  #F68D39 !important;
+    font-family: 'Quicksand', sans-serif;
 }
+:-moz-placeholder { /* Mozilla Fireox 4 to 18 */
+    color:  black  !important;
+ }
 
-.cronometro, .passos{
-    float: right;
-    clear: both;
-    margin: 10px 0 10px;
-}
-.passos {margin-bottom: 30px; background-color: #FF362C  !important; border: none}
-.passos:hover{ background-color: #F0794E !important; }
+ #msg {
+     height: 85px;
+ }
+ #grid-contatos tbody {
+     cursor: pointer;
+ }
+.espaco{background-color: #F68D39; margin-top: 20px; padding: 30px; font-family:  'Montserrat', sans-serif;}
+.espaco div{width: 100%}
+.comentario input, button{float: right;}
+.mensagemForum{float: right; text-align: center}
+.nomeUsuario{font-style: italic; text-align: center}
+.nomeTitulo{text-align: center; font-weight: bold; }
+.infoPrincipais{margin: 0 auto}
+.campoInfos{margin-left: 25px}
+.botaoInserir{background-color: #F68D39 !important; border: none; font-family:  'Montserrat', sans-serif;, sans-serif; float: right;}
+.form-control1{border: 2px solid #F68D39 !important; text-align: left}
+li{list-style: none; padding-top: 10px}
+.botaoComentarioForum{margin-bottom: 120px}
+.iconeComent a{text-align: right; color: black !important}
+.fa-comments:hover{color: #FF362C}
+.tituloForm{text-align: left}
+/* FIM FÓRUM */
 
-.card{margin-top:10px; }
-.extras , .categorias, .enviar{
-    clear: both;
+/*Comentarios fórum*/
+.iconeUsuario{font-size: 1.9rem; margin-right:  20px; color: black}
+.infosUser{margin-top: 40px; color: black; font-weight: bold}
+.espaco1{background-color: #F68D39;border-radius: 1.8rem; text-align: left; margin-bottom: 40px; width: 96%; float: right; padding: 15px; font-family:  'Montserrat', sans-serif;}
+.nomeUser{font-family:  'Montserrat', sans-serif;}
+.espaco1 p{font-weight: bold;}
+.tituloComent p{font-weight: bold; text-align: left}
+.form-control2{border: 2px solid #F68D39 !important; text-align: left; }
+.botaoEnviarComent{background-color: #F68D39 !important;}
+.form-control2::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:  #F0794E !important;
+    font-family: 'Quicksand', sans-serif;
 }
-.imagem{
-    float: right;
-    margin: 15px;
-}
-.imagem i{
-    font-size: 200%;
-}
-.cor1, .adicionar{
-    background-color: #F0794E;
+/*Fim comentários fórum*/
+
+/* CADASTRAR RECEITA */
+.cor1{ 
+    background-color: #F68D39;
     color: white;
     text-transform: uppercase;
-    font-family: 'Montserrat';
-}
-.botao{
-    font-family: 'Prompt', sans-serif;
-}
-.btn-secondary{background-color: #F0794E; border: none; float: right;}
-
-.mode a:hover{
-    background-color: #eba259;   
-}
-.cronometro{border:none; background: none;}
-
-/* FORMULÁRIOS */
+    font-family: 'Montserrat';}
+.card{margin-top:20px; background-color: #fcf7f4; box-shadow: 3px 3px 3px #868686 }
+.card ul li{color: black; font-family: 'Montserrat', sans-serif;}
+.ajustarCadastro{margin: 0 auto; display: wrap}
+.input-group-text, .card {border:none; font-weight: bold; box-shadow: 3px 3px 3px #868686}
+.userform{padding: 20px;}
+.alinhamento{margin: 15px 0 15px;}
+.form-control{border: solid 1.45px #F68D39; box-shadow: 3px 3px 3px #868686}
+.placeCad::-webkit-input-placeholder{color: white; font-family: 'Questrial', sans-serif}
+.form-control::-webkit-input-placeholder{color: black; font-family: 'Questrial', sans-serif}
 .btn_class{
     float: right;
     display: block;
-    background: #F0794E;
+    color: black;
+    background: #F68D39;
     border-radius: 5px;
     border: none;
     padding: 5px;
     width: 35px;
     height: 35px;
 }
-.btn_class:hover{background-color: #eba259;}
-
 .content{
     display: flex;
     margin-top: 10px;
     margin-bottom: 10px;
     align-items: center;
     justify-content: center;
+    color: black
 }
 .content input{
     padding: 0.5rem 1rem;
     height: 40px;
     outline: none;
-    font-family: 'Prompt', sans-serif;
-    color: #535353;
-    background-color: #ecb175;
+    font-family: 'Questrial', sans-serif;
+    color: white;
+    background-color: #F68D39;
     font-size: 1rem;
     margin: 0.25rem;
     border-radius: 2px;
@@ -132,49 +199,131 @@ input[type='file'] {
     outline: none;
     cursor: pointer;
     border: none;
-    background-color: #eba259;
+    background-color: #F68D39;
 }
-.clicar:hover{background-color: #F0794E;}
 
 li{padding: 10px; }
+.botReceita{float: right; margin-bottom: 150px}
+.btn_class:hover{background-color: #eba259;}
+/* FIM CADASTRAR RECEITA */
 
-#listaIngredientes, #listaUtensilios{color: #535353; font-family: 'Prompt', sans-serif; }
+/* VISUALIZAR RECEITA */
+.ajustarConteudo {margin: 0 auto; display:wrap}
+.imagemReceita img{width: 250px; height: 250px; margin-bottom: 40px; border-radius: 50%}
+.ajustarConteudo1 {display: wrap; margin:0 auto; text-align: center; padding: 0px 20px 10px 10px}
+.listasUtensilios, .listasUtensilios1{text-align: justify; width: 100%; padding: 10px}
+ ul{padding: 10px}
+.checkLista{margin-right: 20px}
+.h6Receita{margin-top: 40px}
+.botoesItens{width: 100%;  margin: 0 auto}
+.botaoFinal2 { background: none; border: none;  text-align: right; margin-bottom: 20px }
+.botaoFinal2:hover{border-radius: 0.8rem}
+.receitas::-webkit-scrollbar {background: #FF362C}
+.receitas::-webkit-scrollbar-thumb  {background-color: #F68D39;}
+.receitas{border: 2px solid #FF362C; margin-bottom: 100px}
+/* FIM VISUALIZAR RECEITA */
 
-.card-header{font-weight: bold; }
+@media screen and (max-width: 980px){  
+    .receitas{height: 400px; width: 100%; margin: 10px 20px 20px 0px; overflow-y: auto}
+    .wrapper{ 
+        display: wrap;
+        margin: auto; 
+        text-align: center; 
+        position: relative;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        padding: 20px;}
+    .scroll { 
+        max-width: 330px;
+        overflow-x: scroll;
+        height: 450px;
+        white-space:nowrap;
+        padding-left: 10px}
+    .logob{display: none}
+    .logo{display: inline; width: 80px; padding: 10px;}
+    .menuNavegacao i{ padding: 10px; }
+    .categoria{display: inline-block;}
+    .scroll1 { 
+        overflow-x: scroll;
+        height: 430px;
+        white-space:nowrap;
+        padding-left: 10px}
+}
 
-/* FIM FORMÚLÁRIOS */
-@media screen and (max-width:600px){
-    p{
-        height: 40px;
-    }
-    .userform{
-        font-size: 88%;
-    }
-    .card{
-        font-size: 120%;
-    }
+/* Button cronometro*/
+.checkCronometro{
+
+    float: left;
+    width: 90%;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    text-align: center;   
+    margin-top: 10px;
+    margin: 0px 10px;
+    padding: 14px;
+    font-size: 25px;
+ }
+       
+ .button .botaoCronometro {
+
+    border-radius: 0.5rem;
+    background-color: #F68D39;
+    font-family:'Montserrat', sans-serif ;
+    font-weight: bold;
+    border: none;
+    padding: 12px;
+    line-height: 5px; 
+    margin-top: 20px;
+    margin-right: 50px;
+    margin-bottom: 20px;
 
 }
-@media screen and (min-width:601px) and (max-width:1024px){
-    p{
-        height: 40px;
-        font-size: 20px;
-    }
-    .userform div{
-        font-size: 100%;   
-    }
-    .card{
-        font-size: 120%;}
+.button .botaoCronometr{
+
+  border-radius: 0.5rem;
+  background-color: #F68D39;
+  font-family:'Montserrat', sans-serif ;
+  font-weight: bold;
+  border: none;
+  padding: 12px;
+  line-height: 5px;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+
 }
-@media screen and (min-width:1025px) and (max-width:1200px){
-    p{
-        height: 20px;
+
+
+/*Fim button cronometro*/
+
+@media screen and (min-width: 981px){
+.receitas{height: 400px; width: 610px; padding: 40px; margin: 20px; overflow-y: auto}
+.menuNavegacao i{ padding: 5px 50px 5px 50px }
+.wrapper{ 
+    margin: auto; 
+    padding: 20px;
+    text-align: center; 
+    position: relative;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding-top: 5px;}
+.scroll { 
+    max-width: 60%!important;
+    overflow-x: scroll;
+    height: 448px;
+    white-space:nowrap;
+} 
+
+.scroll1 { 
+    width:100%!important;
+    height: 300px;
+    overflow-y: auto;
+    white-space:nowrap;
+} 
+ .categoria{width: 40%}
+    
     }
-    .userform div{
-            font-size: 250%;
-            
-    }
-    .card{
-        font-size: 180%;      
-    }
-}
+
+

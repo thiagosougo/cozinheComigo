@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/53939a9459.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Hind:wght@500&family=Montserrat:wght@300&family=Questrial&display=swap" rel="stylesheet">
+        <title>Cozinhe Comigo</title>
+        
+    </head>
+    <body>
+
+        <div id="header_global">
+            <div class="menuNavegacao row">
+                <div class=" col-12">
+                    <a href="index.html"><i class="fas fa-home"></i></a>
+                    <a href="pesquisa.html"><i class="fa fa-search"></i></a>
+                    <img class="logo" src="PLANOS DE FUNDO/03ab.png" alt="">
+                    <img class="logob" src="PLANOS DE FUNDO/03a.png" alt="">
+                    <a href="cadastrarReceita.html"><i class="fas fa-pizza-slice"></i></a>
+                    <a href="registrarConta.html"><i class="fa fa-user-alt"></i></a>
+                </div>
+                
+            </div>
+        </div>
+        <main>
+            <div class="ajustarConteudo">
+                
+
+                <div id="login">
+                    <div class="container">
+                        <div id="login-row" class="row justify-content-center align-items-center">
+                            <div id="login-column" class="col-md-6">
+                                <div id="login-box" class="col-md-12">
+                                    <form id="login-form" class="form formulario" method="post" onsubmit="loginUser (this)">
+                                        <div class="form-group">
+                                            <h5 class="titForm">Usuário</h5>
+                                            <input type="text" name="username" id="username" class=" form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <h5 class="titForm">Senha</h5><br>
+                                            <input type="password" name="password" id="password" class="itemForm form-control">
+                                        </div>
+                                        <div class="form-group text-right">                                
+                                            <input type="submit" name="submit" class="botComent" value="Entrar">
+                                        </div>
+                                    </form>
+                                </div>
+                                <button type="button" class="col-12 botComent botUsuario" data-toggle="modal" data-target="#loginModal">Novo usuario</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            
+              <!-- Modal -->
+              <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="loginModalLabel">Registre-se</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="login-box" class="col-md-12">
+                            <form id="login-form" class="form" method="post" onsubmit="loginUser (this)">
+                                <div class="form-group">
+                                    <h5>Usuário</h5><br>
+                                    <input type="text" name="txt_login" id="txt_login" class="itemForm form-control">
+                                </div>
+                                <div class="form-group">
+                                    <h5>Nome completo</h5><br>
+                                    <input type="text" name="txt_nome" id="txt_nome" class="itemForm form-control">
+                                </div>
+                                <div class="form-group">
+                                    <h5>E-mail</h5><br>
+                                    <input type="text" name="txt_email" id="txt_email" class="itemForm form-control">
+                                </div>
+                                <div class="form-group">
+                                    <h5>Senha</h5><br>
+                                    <input type="password" name="txt_senha" id="txt_senha" class="itemForm form-control">
+                                </div>
+                                <div class="form-group">
+                                    <h5>Confirmação de Senha</h5><br>
+                                    <input type="password" name="txt_senha2" id="txt_senha2" class="itemForm form-control">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="botComent" data-dismiss="modal">Cancelar</button>
+                      <button type="button" id="btn_salvar" class="botComent">Salvar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+                <script src="login.js"></script>
+                <script>
+                    
+                    // Declara uma função para processar o formulário de login
+                    function processaFormLogin (event) {                
+                            // Cancela a submissão do formulário para tratar sem fazer refresh da tela
+                            event.preventDefault ();
+            
+                            // Obtem os dados de login e senha a partir do formulário de login
+                            var username = document.getElementById('username').value;
+                            var password = document.getElementById('password').value;
+            
+                            // Valida login e se estiver ok, redireciona para tela inicial da aplicação
+                            resultadoLogin = loginUser (username, password);
+                            if (resultadoLogin) {
+                                window.location.href = 'index.html';
+                            }
+                            else { // Se login falhou, avisa ao usuário
+                                alert ('Usuário ou senha incorretos');
+                            }
+                    }
+            
+                    function salvaLogin (event) {
+                        // Cancela a submissão do formulário para tratar sem fazer refresh da tela
+                        event.preventDefault ();
+            
+                        // Obtem os dados do formulário
+                        let login  = document.getElementById('txt_login').value;
+                        let nome   = document.getElementById('txt_nome').value;
+                        let email  = document.getElementById('txt_email').value;
+                        let senha  = document.getElementById('txt_senha').value;
+                        let senha2 = document.getElementById('txt_senha2').value;
+                        if (senha != senha2) {
+                            alert ('As senhas informadas não conferem.');
+                            return
+                        }
+            
+                        // Adiciona o usuário no banco de dados
+                        addUser (nome, login, senha, email);
+                        alert ('Usuário salvo com sucesso. Proceda com o login para ');
+            
+                        // Oculta a div modal do login
+                        //document.getElementById ('loginModal').style.display = 'none';
+                        $('#loginModal').modal('hide');
+                    }
+            
+                    // Associa a funçao processaFormLogin  formulário adicionado um manipulador do evento submit
+                    document.getElementById ('login-form').addEventListener ('submit', processaFormLogin);
+            
+            
+                    // Associar salvamento ao botao
+                    document.getElementById ('btn_salvar').addEventListener ('click', salvaLogin);        
+                </script>
+                
+            </div>
+        </main>
+
+
+        <script src="script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>  
+    </body>
+</html>

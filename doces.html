@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/53939a9459.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Hind:wght@500&family=Montserrat:wght@300&family=Questrial&display=swap" rel="stylesheet">
+        <title>Cozinhe Comigo</title>
+    </head>
+    <body>
+
+        <div id="header_global">
+            <div class="menuNavegacao row">
+                <div class=" col-12">
+                    <a href="index.html"><i class="fas fa-home"></i></a>
+                    <a href="pesquisa.html"><i class="fa fa-search"></i></a>
+                    <img class="logo" src="PLANOS DE FUNDO/03ab.png" alt="">
+                    <img class="logob" src="PLANOS DE FUNDO/03a.png" alt="">
+                    <a href="cadastrarReceita.html"><i class="fas fa-pizza-slice"></i></a>
+                    <a href="registrarConta.html"><i class="fa fa-user-alt"></i></a>
+                </div>
+                
+            </div>
+        </div>
+        <main>
+            <div class="ajustarConteudo1">
+                
+                <div class="receitas">
+                    <div class="corpo">
+                        <h3 class="ajustarConteudo1 ">Doce de abacaxi</h2>
+                        <div class=" infosPrincipais">
+                            <div class="imagemReceita"><img src="https://www.anamariabrogui.com.br/assets/uploads/receitas/fotos/usuario-2495-76ea7d65da129923061ac3e13b732958.jpg" alt="" class=""></div>
+                            <div class="descricaoReceita">
+                                <h6>Ótima receita para se fazer em festividades ou eventos casuais.</h6>
+                                <h6>Porções: </h6><p>10 pessoas</p>
+                                <h6>Tempo de preparo: </h6><p>30 minutos</p>
+                                <h6>Categoria: </h6><p>Doces</p>
+                                <h6>Dica extra: </h6><p>Para tirar o soro do creme de leite, deixe a lata por 30 minutos no congelador e faça 2 furos na tampa, deixando o soro escorrer pelos buracos.</p>
+                            </div>
+                        </div>
+                        <div class="receitaCompleta">
+                            <h3 class=" h6Receita">Utensílios</h3>
+                            <hr class="divisaoReceita">
+
+                            <div class="listasUtensilios">
+                                <ul class="listasUtensilios">
+                                    <label class="labelLista"><input class="checkLista" type="checkbox">Colheres para medir</label><br>
+                                    <label class="labelLista"><input class="checkLista" type="checkbox">Panela</label><br>
+                                    <label class="labelLista"><input class="checkLista" type="checkbox">Batedeira</label><br>
+                                </ul>
+                            </div>
+    
+                            <h3 class=" h6Receita">Ingredientes</h3>
+                            <hr class="divisaoReceita">
+
+                            <div class="listasUtensilios">
+                                <ul class="listasUtensilios">
+                                    <label class="labelLista"><input class="checkLista" type="checkbox">1 abacaxi picado miúdo</label><br>
+                                    <label class="labelLista"><input class="checkLista" type="checkbox">9 colheres de sopa de açúcar</label><br>
+                                    <label class="labelLista"><input class="checkLista" type="checkbox">2 caixas de gelatina de abacaxi</label><br>
+                                    <label class="labelLista"><input class="checkLista" type="checkbox">2 xícaras de água</label><br>
+                                    <label class="labelLista"><input class="checkLista" type="checkbox">2 claras de ovo</label><br>
+                                    <label class="labelLista"><input class="checkLista" type="checkbox">1 lata de creme de leite sem soro</label><br>
+                                </ul>
+                            </div>
+    
+                            <h3 class=" h6Receita">Modo de preparo</h3>
+                            <hr class="divisaoReceita">
+
+                            <div class="listasUtensilios1">
+                                <ul class="">
+                                    <label class="labelLista"><input class="checkLista" type="checkbox">Junte o abacaxi e cinco das colheres de açúcar em uma panela. Cozinhe por 15 minutos e reserve.</label>
+                                    <label class="labelLista"><input class="checkLista" type="checkbox">Ferva a água.</label>
+                                    <label class="labelLista"><input class="checkLista" type="checkbox">Acrescente a gelatina e mexa bem até dissolver por completo. Reserve.</label>
+                                    <label class="labelLista"><input class="checkLista" type="checkbox">Bata as claras até atingirem o ponto de neve. Acrescente quatro colheres de açúcar e continue batendo até o ponto de suspiro. Desligue a batedeira e acrescente o creme de leite.</label>
+                                    <label class="labelLista"><input class="checkLista" type="checkbox">Misture o abacaxi cozido já frio com as claras batidas e a gelatina. Leve à geladeira por pelo menos 5 horas.</label>
+                                </ul>
+                            </div>
+                            <h3 class=" h6Receita">Cronômetro</h3>
+                            <hr class="divisaoReceita">
+                            <div id="timer">
+                                <span class="checkCronometro" type="time"  id="timerClock">00:00:00</span><br>
+                              
+                              </div>
+                              <div class="button">
+                                
+                                  <button id="timerContinue" class="botaoCronometro" type="submit">Continuar</button>
+                                  <button id="timerPause" class="botaoCronometr" type="submit">Pausar</button>
+                                  <button id="timerStop" class="botaoCronometro" type="submit">Zerar</button><br>
+                                  <button id="timeabacaxi" class="botaoCronometro" type="submit">Iniciar</button>
+                                </div>
+                              
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+          
+    </div>    
+    </main>
+
+
+        <script src="script.js"></script>
+        <script src="cronometro.js"></script>
+        <script src="contador.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>  
+    </body>
+</html>

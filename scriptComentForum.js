@@ -20,7 +20,7 @@ var db_contatos_inicial = {
 }
 
 // Caso os dados já estejam no Local Storage, caso contrário, carrega os dados iniciais
-var db = JSON.parse(localStorage.getItem('comentariosFinal'));
+var db = JSON.parse(localStorage.getItem('comentFinal'));
 if (!db) {
     db = db_contatos_inicial
 };
@@ -39,75 +39,16 @@ function insertContato(contato) {
 
     // Insere o novo objeto no array
     db.data.push(novoContato);
-    displayMessage("Contato inserido com sucesso");
+    displayMessage("Comentário enviado");
 
     // Atualiza os dados no Local Storage
-    localStorage.setItem('comentariosFinal', JSON.stringify(db));
+    localStorage.setItem('comentFinal', JSON.stringify(db));
 }
 
 function updateContato(id, contato) {
 
 
     // Atualiza os dados no Local Storage
-    localStorage.setItem('comentariosFinal', JSON.stringify(db));
+    localStorage.setItem('comentFinal', JSON.stringify(db));
 }
 
-function deleteContato(id) {    
-    // Filtra o array removendo o elemento com o id passado
-    db.data = db.data.filter(function (element) { return element.id != id });
-
-    displayMessage("Contato removido com sucesso");
-
-    // Atualiza os dados no Local Storage
-    localStorage.setItem('comentariosFinal', JSON.stringify(db));
-}
-var ul= document.getElementById("listaUtensilios");
-var li;
-var itemId;
-var item;
-
-addUtensilios = function(){
-if(document.getElementById("utensilios").value !== ""){
-	item = document.getElementById("utensilios");
-	itemId = ul.childElementCount;
-	li = createItemEl (item.value, itemId);
-	li.appendChild(createRemoveUtensiliosBtn(itemId));
-	ul.appendChild(li);
-	item.value ="";
-}
-
-}
-
-removeUtensilios = function(itemId){
-	for(a=0 ; a < ul.children.length ; a++){
-		if(ul.children[a].getAttribute("index") == itemId){
-			ul.children[a].remove();
-		}
-	}
-}
-
-createItemEl = function(itemValue, itemId){
-	let li = document.createElement("li");
-	li.setAttribute("index", itemId);
-	li.appendChild(document.createTextNode(itemValue));
-	return li;
-}
-createRemoveUtensiliosBtn = function (itemId){ 
-	let btn = document.createElement("button");
-	btn.setAttribute("onclick","removeUtensilios("+itemId+")");
-	btn.setAttribute("class", "btn_class");
-	btn.innerHTML = "x";
-	return btn;
-}
-
-function addLi()
-{
-    var txtVal = document.getElementById('txtVal').value,
-        listNode = document.getElementById('list'),
-        liNode = document.createElement("LI"),
-        txtNode = document.createTextNode(txtVal);
-
-     liNode.appendChild(txtNode);
-     listNode.appendChild(liNode);
-
-}

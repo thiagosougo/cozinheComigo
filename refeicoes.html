@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/53939a9459.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Hind:wght@500&family=Montserrat:wght@300&family=Questrial&display=swap" rel="stylesheet">
+        <title>Cozinhe Comigo</title>
+    </head>
+    <body>
+
+        <div id="header_global">
+            <div class="menuNavegacao row">
+                <div class=" col-12">
+                    <a href="index.html"><i class="fas fa-home"></i></a>
+                    <a href="pesquisa.html"><i class="fa fa-search"></i></a>
+                    <img class="logo" src="PLANOS DE FUNDO/03ab.png" alt="">
+                    <img class="logob" src="PLANOS DE FUNDO/03a.png" alt="">
+                    <a href="cadastrarReceita.html"><i class="fas fa-pizza-slice"></i></a>
+                    <a href="registrarConta.html"><i class="fa fa-user-alt"></i></a>
+                </div>
+                
+            </div>
+        </div>
+        <main>
+            <div class="row ajustarConteudo1">
+                <div class="receitas">
+                        <h3 class="ajustarConteudo1 titReceita ">Macarrão à Bolonhesa</h3>
+                        <div class="ajustarConteudo1 infosPrincipais">
+                            <div class="imagemReceita"><img src="https://abrilmdemulher.files.wordpress.com/2016/09/receita-macarrao-a-bolonhesa-1-4126.jpg?quality=90&strip=info&w=654&h=436&crop=1" alt="" class=""></div>
+                            <div class="descricaoReceita">
+                                <h6>Receita rápida e fácil que vai salvar o seu almoço.</h6>
+                                <h6>Porções: </h6><p>4 pessoas</p>
+                                <h6>Tempo de preparo: </h6><p>25 minutos</p>
+                                <h6>Categoria: </h6><p>Massas</p>
+                                <h6>Dica extra: </h6><p>Prepare o molho junto ao cozimento da massa</p>
+                            </div>
+                        </div>
+                        <div class="receitaCompleta">
+                            <h3 class="ajustarConteudo1 h6Receita">Utensílios</h3>
+                            <hr class="divisaoReceita">
+                            <div class="listasUtensilios">
+                                <ul class="listasUtensilios">
+                                    <label class="labelLista"><input class="checkLista" type="checkbox">Panela</label><br>
+                                    <label class="labelLista"><input class="checkLista" type="checkbox">Talheres</label>
+                                </ul>
+                            </div>
+    
+                            <h3 class="ajustarConteudo1 h6Receita">Ingredientes</h3>
+                            <hr class="divisaoReceita">
+                            <div class="listasUtensilios">
+                                <ul class="listasUtensilios">
+                                    <label class="labelLista"><input class="checkLista" type="checkbox">500 g de espaguete</label><br>
+                                    <label class="labelLista"><input class="checkLista" type="checkbox">150 g de mortadela cortada em fatias bem finas e depois picada</label>
+                                    <label class="labelLista"><input class="checkLista" type="checkbox">3 dentes de alho picadinhos</label><br>
+                                    <label class="labelLista"><input class="checkLista" type="checkbox">1 pimenta dedo-de-moça sem sementes picadinha</label><br>
+                                    <label class="labelLista"><input class="checkLista" type="checkbox">1 lata de tomates pelados</label><br>
+                                    <label class="labelLista"><input class="checkLista" type="checkbox">1 cubo de caldo de carne (eu usei o de potinho)</label><br>
+                                    <label class="labelLista"><input class="checkLista" type="checkbox">Azeite</label><br>
+                                    <label class="labelLista"><input class="checkLista" type="checkbox">Salsinha e cebolinha picadas</label><br>
+                                </ul>
+                            </div>
+    
+                            <h3 class="ajustarConteudo1 h6Receita">Modo de preparo</h3>
+                            <hr class="divisaoReceita">
+                            <div class="listasUtensilios1">
+                                <ul class="">
+                                    <label class="labelLista"><input class="checkLista" type="checkbox">Cozinhe o espaguete al dente.</label>
+                                    <label class="labelLista"><input class="checkLista" type="checkbox">Aqueça o azeite e doure a cebola, depois o alho e a pimenta.</label>
+                                    <label class="labelLista"><input class="checkLista" type="checkbox">Junte os tomates pelados picados e o caldo de carne, deixe ferver para o tomate cozinhar.</label>
+                                    <label class="labelLista"><input class="checkLista" type="checkbox">Junte então a mortadela picadinha e deixe cozinhar por uns 5 minutos no máximo. </label>
+                                    <label class="labelLista"><input class="checkLista" type="checkbox">Desligue o fogo e jogue a salsinha e a cebolinha. Sirva sobre o macarrão.</label>
+                                </ul>
+                            </div>
+                            <h3 class=" h6Receita">Cronômetro</h3>
+                            <hr class="divisaoReceita">
+                            <div id="timer">
+                                <span class="checkCronometro" type="time"  id="timerClock">00:00:00</span><br>
+                              
+                              </div>
+                              <div class="button">
+                                
+                                  <button id="timerContinue" class="botaoCronometro" type="submit">Continuar</button>
+                                  <button id="timerPause" class="botaoCronometr" type="submit">Pausar</button>
+                                  <button id="timerStop" class="botaoCronometro" type="submit">Zerar</button><br>
+                                  <button id="timemacarrao" class="botaoCronometro" type="submit">Iniciar</button>
+                                  <span id="timeabacaxi"></span>
+                                </div>
+                    </div>
+            </div>            
+
+            <div class="receitas">
+                <div class="corpo">
+                    <h3 class="ajustarConteudo1 titReceita">Fricassê de Frango</h3>
+                    <div class="ajustarConteudo1 infosPrincipais">
+                        <div class="imagemReceita"><img src="https://s2.glbimg.com/3t0GdIyrXY7LJT4uA9V1UVKiklk=/0x0:600x430/984x0/smart/filters:strip_icc()/s.glbimg.com/po/rc/media/2015/03/31/22_36_11_433_fricasse.jpg" alt="" class=""></div>
+                        <div class="descricaoReceita">
+                            <h6>Ideal para almoço em família.</h6>
+                            <h6>Porções: </h6><p>5 pessoas</p>
+                            <h6>Tempo de preparo: </h6><p>30 minutos</p>
+                            <h6>Categoria: </h6><p>Almoço</p>
+                            <h6>Dica extra: </h6><p>Jogue água no óleo fervente. Se estourar rápido, já está pronto para fritar os bolinhos</p>
+                        </div>
+                    </div>
+                    <div class="receitaCompleta">
+                        <h3 class="ajustarConteudo1 h6Receita">Utensílios</h3>
+                        <hr class="divisaoReceita">
+                        <div class="listasUtensilios">
+                            <ul class="listasUtensilios">
+                                <label class="labelLista"><input class="checkLista" type="checkbox">Talhes para medidas</label><br>
+                                <label class="labelLista"><input class="checkLista" type="checkbox">Talheres</label><br>
+                                <label class="labelLista"><input class="checkLista" type="checkbox">liquidificador</label><br>
+                                <label class="labelLista"><input class="checkLista" type="checkbox">Panela</label>
+
+                            </ul>
+                        </div>
+
+                        <h3 class="ajustarConteudo1 h6Receita">Ingredientes</h3>
+                        <hr class="divisaoReceita">
+                        <div class="listasUtensilios">
+                            <ul class="listasUtensilios">
+                                <label class="labelLista"><input class="checkLista" type="checkbox">1 lata de creme de leite</label><br>
+                                <label class="labelLista"><input class="checkLista" type="checkbox">1 lata de milho verde</label><br>
+                                <label class="labelLista"><input class="checkLista" type="checkbox">1 copo de requeijão cremoso</label><br>
+                                <label class="labelLista"><input class="checkLista" type="checkbox">100 g de azeitona sem caroço</label><br>
+                                <label class="labelLista"><input class="checkLista" type="checkbox">2 peitos de frango desfiados</label><br>
+                                <label class="labelLista"><input class="checkLista" type="checkbox">200 g de mussarela fatiada</label><br>
+                                <label class="labelLista"><input class="checkLista" type="checkbox">100 g de batata palha</label><br>
+                                <label class="labelLista"><input class="checkLista" type="checkbox">1 xícara de água</label><br>
+                                <label class="labelLista"><input class="checkLista" type="checkbox">1 pitada de sal</label>
+                            </ul>
+                        </div>
+
+                        <h3 class="ajustarConteudo1 h6Receita">Modo de preparo</h3>
+                        <hr class="divisaoReceita">
+                        <div class="listasUtensilios1">
+                            <ul class="">
+                                <label class="labelLista"><input class="checkLista" type="checkbox">Bata no liquidificador o milho, o requeijão, o creme de leite e a água</label><br>
+                                <label class="labelLista"><input class="checkLista" type="checkbox">Refogue o creme do liquidificador com o frango desfiado, as azeitonas e o sal até ficar com uma textura espessa</label><br>
+                                <label class="labelLista"><input class="checkLista" type="checkbox">Coloque o refogado numa assadeira, cubra com mussarela e espalhe a batata palha por cima</label><br>
+                                <label class="labelLista"><input class="checkLista" type="checkbox">Leve ao forno até borbulhar</label><br>
+                                <label class="labelLista"><input class="checkLista" type="checkbox">Sirva com arroz branco.</label>
+                            </ul>
+                        </div>
+                        <h3 class=" h6Receita">Cronômetro</h3>
+                        <hr class="divisaoReceita">
+                        <div id="timer">
+                            <span class="checkCronometro" type="time"  id="timerClock">00:00:00</span><br>
+                          
+                          </div>
+                          <div class="button">
+                            <button id="timerContinuar" class="botaoCronometro" type="submit">Continuar</button>
+                            <button id="timerPausar" class="botaoCronometr" type="submit">Pausar</button>
+                            <button id="timerZerar" class="botaoCronometro" type="submit">Zerar</button><br>
+                            <button id="timefricasse" class="botaoCronometro" type="submit">Iniciar</button>
+                        
+                            </div>
+                          
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+        <script src="script.js"></script>
+        <script src="cronometro.js"></script>
+        <script src="contador.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>  
+    </body>
+</html>
