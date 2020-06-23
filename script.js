@@ -178,7 +178,7 @@ pesquisarReceitas()
 // recebendo receitas do local storage
 
 // Recupera o json do localStorage
-var jsonReceitas = window.localStorage.getItem('receitas')
+var jsonReceitas = window.localStorage.getItem('receitas');
 
 // Converte este json para objeto
 var receitas = JSON.parse(jsonReceitas)
