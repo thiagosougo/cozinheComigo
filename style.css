@@ -169,6 +169,50 @@ li{list-style: none; padding-top: 10px}
 
 /*Fim comentários receita*/
 
+/* Button cronometro*/
+.checkCronometro{
+
+    float: left;
+    width: 90%;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    text-align: center;   
+    margin-top: 10px;
+    margin: 0px 10px;
+    padding: 14px;
+    font-size: 25px;
+ }       
+ .button .botaoCronometro {
+
+    border-radius: 0.5rem;
+    background-color: #F68D39;
+    font-family:'Montserrat', sans-serif ;
+    font-weight: bold;
+    border: none;
+    padding: 12px;
+    line-height: 5px; 
+    margin-top: 20px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+
+}
+.button .botaoCronometr{
+
+  border-radius: 0.5rem;
+  background-color: #F68D39;
+  font-family:'Montserrat', sans-serif ;
+  font-weight: bold;
+  border: none;
+  padding: 12px;
+  line-height: 5px;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+
+/*Fim button cronometro*/
+
 
 
 /* CADASTRAR RECEITA */
@@ -248,51 +292,7 @@ li{padding: 10px; }
 .receitas{border: 2px solid #FF362C; margin-bottom: 100px}
 /* FIM VISUALIZAR RECEITA */
 
-/* Button cronometro*/
-.checkCronometro{
 
-    float: left;
-    width: 90%;
-    border: 1px solid black;
-    border-radius: 0.5rem;
-    text-align: center;   
-    margin-top: 10px;
-    margin: 0px 10px;
-    padding: 14px;
-    font-size: 25px;
- }
-       
- .button .botaoCronometro {
-
-    border-radius: 0.5rem;
-    background-color: #F68D39;
-    font-family:'Montserrat', sans-serif ;
-    font-weight: bold;
-    border: none;
-    padding: 12px;
-    line-height: 5px; 
-    margin-top: 20px;
-    margin-right: 50px;
-    margin-bottom: 20px;
-
-}
-.button .botaoCronometr{
-
-  border-radius: 0.5rem;
-  background-color: #F68D39;
-  font-family:'Montserrat', sans-serif ;
-  font-weight: bold;
-  border: none;
-  padding: 12px;
-  line-height: 5px;
-  margin-top: 20px;
-  margin-right: 20px;
-  margin-bottom: 20px;
-
-}
-
-
-/*Fim button cronometro*/
 
 @media screen and (max-width: 980px){  
     .receitas{height: 400px; width: 100%; margin: 10px 20px 20px 0px; overflow-y: auto}
