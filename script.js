@@ -144,14 +144,16 @@ function setUserPass() {}
 
 // Inicializa as estruturas utilizadas pelo LoginApp
 initLoginApp()
+
 //PesquisarReceitas.
 function pesquisarReceitas() {
   let itens = JSON.parse(localStorage.receitas)
 
   var options = {
-    valueNames: ['campoTitulo', 'categoria'],
+    valueNames: ['campoTitulo', 'campoDescricao', 'categoria', 'receita'],
     // Since there are no elements in the list, this will be used as template.
-    item: '<li><h3 class="campoTitulo"></h3><p class="categoria"></p></li>',
+    item:
+      '<li><h3 class="campoTitulo"></h3><p class="campoDescricao"></p><p class="categoria"></p><p class="receita"></p></li>',
   }
 
   $('.list').hide()
@@ -172,15 +174,13 @@ function pesquisarReceitas() {
 
   //receitas.add({});
 }
-
 pesquisarReceitas()
 
 // recebendo receitas do local storage
 
 // Recupera o json do localStorage
-var jsonReceitas = window.localStorage.getItem('receitas');
+var jsonReceitas = window.localStorage.getItem('receitas')
 
 // Converte este json para objeto
 var receitas = JSON.parse(jsonReceitas)
-
 console.log(receitas)
