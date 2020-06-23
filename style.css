@@ -211,6 +211,7 @@ li{padding: 10px; }
 .ajustarConteudo {margin: 0 auto; display:wrap}
 .imagemReceita img{width: 250px; height: 250px; margin-bottom: 40px; border-radius: 50%}
 .ajustarConteudo1 {display: wrap; margin:0 auto; text-align: center; padding: 0px 20px 10px 10px}
+.ajustarConteudo2{margin-bottom: 120px}
 .listasUtensilios, .listasUtensilios1{text-align: justify; width: 100%; padding: 10px}
  ul{padding: 10px}
 .checkLista{margin-right: 20px}
@@ -222,6 +223,22 @@ li{padding: 10px; }
 .receitas::-webkit-scrollbar-thumb  {background-color: #F68D39;}
 .receitas{border: 2px solid #FF362C; margin-bottom: 100px}
 /* FIM VISUALIZAR RECEITA */
+
+/*Pesquisar receita */
+ul.list > li {
+    padding: 10px;
+    border: 2px solid #F68D39;
+    margin-bottom: 10px;
+}
+.campoTitulo{  margin-bottom: 0.5rem; }
+.campoDescricao{ margin-top: 0;
+    margin-bottom: 1px;
+    color: #705151; }
+    .categoria{margin-top: 0;
+        margin-bottom: 1px;
+        color: #705151;
+    }
+    /*Fim Pesquisar receita */
 
 @media screen and (max-width: 980px){  
     .receitas{height: 400px; width: 100%; margin: 10px 20px 20px 0px; overflow-y: auto}
