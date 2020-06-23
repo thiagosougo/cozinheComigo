@@ -126,9 +126,7 @@
     
                     // Reexibe os infos
                     exibeForum();
-    
-                    // Limpa o formulario
-                    $("#form-info")[0].reset();
+
                 });
     
                
@@ -139,16 +137,6 @@
                             $(this).remove();
                         });
                     }, 5000);
-                });
-    
-                // Preenche o formulário quando o usuario clicar em uma linha da tabela 
-                $("#grid-infos").on("click", "tr", function (e) {
-                    let linhaContato = this;
-                    colunas = linhaContato.querySelectorAll("td");
-    
-                    $("#inputNome").val(colunas[1].innerText);
-                    $("#inputTitulo").val(colunas[2].innerText);
-                    $("#inputMensagem").val(colunas[6].innerText);
                 });
     
                 exibeForum();

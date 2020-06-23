@@ -49,10 +49,3 @@ function insertContato(contato) {
     // Atualiza os dados no Local Storage
     localStorage.setItem('forumFinalizado', JSON.stringify(db));
 }
-
-function updateContato(id, contato) {
-
-
-    // Atualiza os dados no Local Storage
-    localStorage.setItem('forumFinalizado', JSON.stringify(db));
-}

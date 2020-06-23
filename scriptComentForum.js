@@ -2,19 +2,19 @@
 var db_contatos_inicial = {
     "data": [
         {
-            "nome": "Iolanda Maria de Almeida",
-            "titulo": "Macarrão",
-            "mensagem": "Descobri que fazer um macarrão é mais fácil do que pensei, adorei o passo a passo da receita <3."
+            "nome": "Enzo Azevedo Rodrigues",
+            "titulo": "Meu filho tem intolerância à lactose",
+            "mensagem": "Cara, é de boa. Eu tenho e é só tomar enzima. Não vivo sem uma vitamina haha."
         },
         {
-            "nome": "Bruno Alves Caetano",
-            "titulo": "Fricassê de frango",
-            "mensagem": "Fiz esse prato para minha família e eles adoraram. Coloquei um pouco de mussarela e ficou melhor ainda "
+            "nome": "Luiza Cavalcanti Castro",
+            "titulo": "Quero virar vegetariana",
+            "mensagem": "Coisa desnecessária esse povo que quer parar de comer carne!"
         },
         {
-            "nome": "João Carlos Silva",
-            "titulo": "Macarrão à bolonhesa",
-            "mensagem": "Cheguei morrendo de fome e rapidinho fiz esse macarrão. Esse app está salvando !!!"
+            "nome": "Luís Rodrigues Araujo",
+            "titulo": "Descobri que tenho diabetes tipo 1",
+            "mensagem": "É difícil controlar, mas voce se acostuma! A minha mãe também tem e está super bem hoje, mas tem que ter responsabilidade. Espero que dê tudo certo <3"
         }
     ]
 }
