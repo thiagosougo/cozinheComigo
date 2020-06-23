@@ -176,6 +176,24 @@ li{list-style: none; padding-top: 10px}
 .tituloForm{text-align: left}
 /* FIM FÓRUM */
 
+/*Comentarios receita*/
+.botcomentario{    
+    margin-top: -20px !important;
+    border-radius: 0.5 rem;
+    background-color: #F68D39;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    border: none;
+    padding: 8px;
+    
+         
+}
+
+.titForum .botcomentario{display: inline-block;margin-bottom:40%}
+
+
+/*Fim comentários receita*/
+
 /*Comentarios fórum*/
 .iconeUsuario{font-size: 1.9rem; margin-right:  20px; color: black}
 .infosUser{margin-top: 40px; color: black; font-weight: bold}
