@@ -146,75 +146,6 @@ li{list-style: none; padding-top: 10px}
 }
 /*Fim comentários fórum*/
 
-/*Comentarios receita*/
-.botcomentario{    
-    margin-top: -20px !important;
-    border-radius: 0.5 rem;
-    background-color: #F68D39;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    border: none;
-    padding: 8px;
-    
-
-       
-   
-}
-
-.titForum,.botcomentario{
-    display: inline-block; margin-right: 40px !important;
-    margin-bottom:40%
-}
-
-
-/*Fim comentários receita*/
-
-/* Button cronometro*/
-.checkCronometro{
-
-    float: left;
-    width: 90%;
-    border: 1px solid black;
-    border-radius: 0.5rem;
-    text-align: center;   
-    margin-top: 10px;
-    margin: 0px 10px;
-    padding: 14px;
-    font-size: 25px;
- }       
- .button .botaoCronometro {
-
-    border-radius: 0.5rem;
-    background-color: #F68D39;
-    font-family:'Montserrat', sans-serif ;
-    font-weight: bold;
-    border: none;
-    padding: 12px;
-    line-height: 5px; 
-    margin-top: 20px;
-    margin-right: 50px;
-    margin-bottom: 20px;
-
-}
-.button .botaoCronometr{
-
-  border-radius: 0.5rem;
-  background-color: #F68D39;
-  font-family:'Montserrat', sans-serif ;
-  font-weight: bold;
-  border: none;
-  padding: 12px;
-  line-height: 5px;
-  margin-top: 20px;
-  margin-right: 20px;
-  margin-bottom: 20px;
-}
-
-
-/*Fim button cronometro*/
-
-
-
 /* CADASTRAR RECEITA */
 .cor1{ 
     background-color: #F68D39;
@@ -292,8 +223,6 @@ li{padding: 10px; }
 .receitas{border: 2px solid #FF362C; margin-bottom: 100px}
 /* FIM VISUALIZAR RECEITA */
 
-
-
 @media screen and (max-width: 980px){  
     .receitas{height: 400px; width: 100%; margin: 10px 20px 20px 0px; overflow-y: auto}
     .wrapper{ 
@@ -321,22 +250,52 @@ li{padding: 10px; }
         white-space:nowrap;
         padding-left: 10px}
 }
-/*Pesquisar receita */
-ul.list > li {
-    padding: 10px;
-    border: 2px solid #F68D39;
-    margin-bottom: 10px;
-}
-.campoTitulo{  margin-bottom: 0.5rem; }
-.campoDescricao{ margin-top: 0;
-    margin-bottom: 1px;
-    color: #705151; }
-    .categoria{margin-top: 0;
-        margin-bottom: 1px;
-        color: #705151;
-    }
-    /*Fim Pesquisar receita */
 
+/* Button cronometro*/
+.checkCronometro{
+
+    float: left;
+    width: 90%;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    text-align: center;   
+    margin-top: 10px;
+    margin: 0px 10px;
+    padding: 14px;
+    font-size: 25px;
+ }
+       
+ .button .botaoCronometro {
+
+    border-radius: 0.5rem;
+    background-color: #F68D39;
+    font-family:'Montserrat', sans-serif ;
+    font-weight: bold;
+    border: none;
+    padding: 12px;
+    line-height: 5px; 
+    margin-top: 20px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+
+}
+.button .botaoCronometr{
+
+  border-radius: 0.5rem;
+  background-color: #F68D39;
+  font-family:'Montserrat', sans-serif ;
+  font-weight: bold;
+  border: none;
+  padding: 12px;
+  line-height: 5px;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+
+}
+
+
+/*Fim button cronometro*/
 
 @media screen and (min-width: 981px){
 .receitas{height: 400px; width: 610px; padding: 40px; margin: 20px; overflow-y: auto}
@@ -366,5 +325,3 @@ ul.list > li {
  .categoria{width: 40%}
     
     }
-
-  
