@@ -25,6 +25,20 @@ function enviarReceita() {
         receita[elemento.id] = elemento.value
     })
 
+    $('#listaUtensilios li').each((i, el) => {
+        listasReceitas.utensilios.push($(el).innerText)
+    })
+    $('#listaIngredientes li').each((i, el) => {
+        listasReceitas.ingredientes.push($(el).innerText)
+    })
+    $('#listaDicas li').each((i, el) => {
+        listasReceitas.dicas.push($(el).innerText)
+    })
+    $('#listaEtapas li').each((i, el) => {
+        listasReceitas.passos.push($(el).innerText)
+    })
+
+
     //Salvando select categorias
     receita.categoria = categorias.selectedOptions[0].text
 
@@ -36,6 +50,17 @@ function enviarReceita() {
 
     // transformando obj em string
     var jsonAux = JSON.stringify(objetoASerEnviado);
+
+    //extraindo as receitas ja existentes
+    var jsonReceitas = localStorage.getItem('receitas')
+    if (jsonReceitas != null) {
+        var objVindoDoLocalStorage = JSON.parse(jsonReceitas)
+
+        for (i = 0; i < objVindoDoLocalStorage.receitas.length; i++) {
+            var receitaAtual = objVindoDoLocalStorage.receitas[i]
+            objetoASerEnviado.receitas.push(receitaAtual)
+        }
+    }
 
     //salvando objetoASerEnviado em localstorage
     window.localStorage.setItem('receitas', jsonAux);
@@ -51,6 +76,12 @@ function enviarReceita() {
         passos: [],
         dicas: []
     }
+
+    $('ul li').each(function(i, el) {
+        $(el).remove()
+    })
+
+    window.scrollTo(0, 0)
 
 }
 
@@ -215,4 +246,3 @@ createRemoveDicasBtn = function(itemId) {
     btn.innerHTML = "x";
     return btn;
 }
-

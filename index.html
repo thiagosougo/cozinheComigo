@@ -1,218 +1,197 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <a href="refeicoes.html"></a>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://kit.fontawesome.com/53939a9459.js"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/53939a9459.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Hind:wght@500&family=Montserrat:wght@300&family=Questrial&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Hind:wght@500&family=Montserrat:wght@300&family=Questrial&display=swap" rel="stylesheet" />
     <title>Cozinhe Comigo</title>
-    <script
-      src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"
-      type="text/javascript"
-    ></script>
-  </head>
-  <body onload="init()">
+    <script src="list.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
+</head>
+
+<body>
     <div id="header_global">
-      <div class="menuNavegacao row">
-        <div class="col-12">
-          <a href="index.html"><i class="fas fa-home"></i></a>
-          <a href="pesquisa.html"><i class="fa fa-search"></i></a>
-          <img class="logo" src="PLANOS DE FUNDO/03ab.png" alt="" />
-          <img class="logob" src="PLANOS DE FUNDO/03a.png" alt="" />
-          <a href="cadastrarReceita.html"><i class="fas fa-pizza-slice"></i></a>
-          <a href="registrarConta.html"><i class="fa fa-user-alt"></i></a>
+        <div class="menuNavegacao row">
+            <div class="col-12">
+                <a href="index.html"><i class="fas fa-home"></i></a>
+                <a href="pesquisa.html"><i class="fa fa-search"></i></a>
+                <img class="logo" src="PLANOS DE FUNDO/03ab.png" alt="" />
+                <img class="logob" src="PLANOS DE FUNDO/03a.png" alt="" />
+                <a href="cadastrarReceita.html"><i class="fas fa-pizza-slice"></i></a>
+                <a href="registrarConta.html"><i class="fa fa-user-alt"></i></a>
+            </div>
         </div>
-      </div>
     </div>
     <main>
-      <div class="ajustarConteudo">
-        <div class="row wrapper">
-          <div class="scroll">
-            <div id="receitaInicial" class="receita"></div>
-            <div class="receita">
-              <img src="https://www.anamariabrogui.com.br/assets/uploads/receitas/fotos/usuario-2495-76ea7d65da129923061ac3e13b732958.jpg">
-              <h6>Doces</h6>
-              <a href="doces.html"> <h3>Doce de Abacaxi</h3></a>
-          </div>
-          
-          <div class="receita">
-              <img src="https://abrilmdemulher.files.wordpress.com/2016/09/receita-macarrao-a-bolonhesa-1-4126.jpg?quality=90&strip=info&w=654&h=436&crop=1">
-              <h6>Refeições</h6>
-              <a href="refeicoes.html"><h3>Macarrão à Bolonhesa</h3></a>
-          </div>
+        <div class="ajustarConteudo">
+            <div class="row wrapper">
+                <div class="scroll" id="receitaInicial">
+                    <div class="receita">
+                        <img src="https://www.anamariabrogui.com.br/assets/uploads/receitas/fotos/usuario-2495-76ea7d65da129923061ac3e13b732958.jpg">
+                        <h6>Doces</h6>
+                        <a href="doces.html">
+                            <h3>Doce de Abacaxi</h3>
+                        </a>
+                    </div>
 
-          <div class="receita">
-              <img src="https://img.itdg.com.br/tdg/images/recipes/000/307/186/341699/341699_original.jpg?mode=crop&width=710&height=400" alt="" class="src">
-              <h6>Lanches</h6>
-              <a href="lanches.html"><h3>Bolinho de Quermersse</h3></a>
-          </div>
+                    <div class="receita">
+                        <img src="https://abrilmdemulher.files.wordpress.com/2016/09/receita-macarrao-a-bolonhesa-1-4126.jpg?quality=90&strip=info&w=654&h=436&crop=1">
+                        <h6>Refeições</h6>
+                        <a href="refeicoes.html">
+                            <h3>Macarrão à Bolonhesa</h3>
+                        </a>
+                    </div>
 
-          <div class="receita">
-              <img src="https://www.mavalerio.com.br/wp-content/uploads/2018/12/160812_natal-225-500x340.png" alt="" class="src">
-              <h6>Bebidas</h6>
-              <a href="bebidas.html"><h3>Milk shake de Morango</h3></a>
-          </div>
+                    <div class="receita">
+                        <img src="https://img.itdg.com.br/tdg/images/recipes/000/307/186/341699/341699_original.jpg?mode=crop&width=710&height=400" alt="" class="src">
+                        <h6>Lanches</h6>
+                        <a href="lanches.html">
+                            <h3>Bolinho de Quermersse</h3>
+                        </a>
+                    </div>
 
-          <div class="receita">
-              <img src="https://s2.glbimg.com/3t0GdIyrXY7LJT4uA9V1UVKiklk=/0x0:600x430/984x0/smart/filters:strip_icc()/s.glbimg.com/po/rc/media/2015/03/31/22_36_11_433_fricasse.jpg" alt="" class="src">
-              <h6>Refeições</h6>
-              <a href="refeicoes.html"><h3>Fricassê de Frango</h3></a>
-          </div>
-          </div>
-          <div class="categorias">
-            <div class="row linha linha1">
-              <a href="doces.html">
-                <i class="fas fa-birthday-cake"></i>
-                <br />
-                Doces
-              </a>
-              <a href="refeicoes.html">
-                <i class="fas fa-utensils"></i>
-                <br />
-                Refeições
-              </a>
+                    <div class="receita">
+                        <img src="https://www.mavalerio.com.br/wp-content/uploads/2018/12/160812_natal-225-500x340.png" alt="" class="src">
+                        <h6>Bebidas</h6>
+                        <a href="bebidas.html">
+                            <h3>Milk shake de Morango</h3>
+                        </a>
+                    </div>
+
+                    <div class="receita">
+                        <img src="https://s2.glbimg.com/3t0GdIyrXY7LJT4uA9V1UVKiklk=/0x0:600x430/984x0/smart/filters:strip_icc()/s.glbimg.com/po/rc/media/2015/03/31/22_36_11_433_fricasse.jpg" alt="" class="src">
+                        <h6>Refeições</h6>
+                        <a href="refeicoes.html">
+                            <h3>Fricassê de Frango</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="categorias">
+                    <div class="row linha linha1">
+                        <a href="doces.html">
+                            <i class="fas fa-birthday-cake"></i>
+                            <br /> Doces
+                        </a>
+                        <a href="refeicoes.html">
+                            <i class="fas fa-utensils"></i>
+                            <br /> Refeições
+                        </a>
+                    </div>
+                    <div class="row linha linha2">
+                        <a href="lanches.html">
+                            <i class="fas fa-hamburger"></i>
+                            <br /> Lanches
+                        </a>
+                        <a href="bebidas.html">
+                            <i class="fas fa-mug-hot"></i>
+                            <br /> Bebidas
+                        </a>
+                    </div>
+                    <div class="row linha linha3">
+                        <a href="veganos.html">
+                            <i class="fas fa-lemon"></i>
+                            <br /> Vegetarianos
+                        </a>
+                        <a href="vegetarianos.html">
+                            <i class="fas fa-carrot"></i>
+                            <br /> Veganos
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="row linha linha2">
-              <a href="lanches.html">
-                <i class="fas fa-hamburger"></i>
-                <br />
-                Lanches
-              </a>
-              <a href="bebidas.html">
-                <i class="fas fa-mug-hot"></i>
-                <br />
-                Bebidas
-              </a>
+            <div class="row titForumInicial">
+                <h2 class="titForum">Fórum</h2>
+                <a href="forum.html">
+                    <input class="botForum" type="button" value="Adicionar postagem" />
+                </a>
             </div>
-            <div class="row linha linha3">
-              <a href="veganos.html">
-                <i class="fas fa-lemon"></i>
-                <br />
-                Vegetarianos
-              </a>
-              <a href="vegetarianos.html">
-                <i class="fas fa-carrot"></i>
-                <br />
-                Veganos
-              </a>
+            <div class="row encapsular">
+                <div class="rolar">
+                    <div class="inicialForum">
+                        <h4 class="tituloForumInicial">Leila Carvalho Lima</h4>
+                        <h5 class="subtituloForumInicial">Quero virar vegetariana</h5>
+                        <p class="mensagemForumInicial">
+                            Ano retrasado eu fiquei uma semana sem comer carne, mas os meus pais não estavam colaborando. Agora estou morando sozinha e queria dicas de ingredientes que eu possa substituir pela carne. Me disseram que soja é uma boa!
+                        </p>
+                        <a class="col-12 iconeComent" href="comentarioForum.html">
+                            <i class="col-12 far fa-comments"></i>
+                        </a>
+                    </div>
+
+                    <div class="inicialForum">
+                        <h4 class="tituloForumInicial">Estevan Oliveira Gomes</h4>
+                        <h5 class="subtituloForumInicial">
+                            Meu filho tem intolerância à lactose
+                        </h5>
+                        <p class="mensagemForumInicial">
+                            Ele tem 8 anos e descobrimos depois que passou mal por causa de uma vitamina. Não sei o que fazer! :o #paiDesesperado
+                        </p>
+                        <a class="col-12 iconeComent" href="comentarioForum.html">
+                            <i class="col-12 far fa-comments"></i>
+                        </a>
+                    </div>
+
+                    <div class="inicialForum">
+                        <h4 class="tituloForumInicial">Amanda Sousa Rodrigues</h4>
+                        <h5 class="subtituloForumInicial">
+                            Descobri que tenho diabetes tipo 1
+                        </h5>
+                        <p class="mensagemForumInicial">
+                            Tenho 19 anos e nunca fui muito de doces, mas comia de vez em quando. Fui diagnosticada com diabetes tipo 1 anteontem. Alguém na mesma situação para trocar conhecimentos?
+                        </p>
+                        <a class="col-12 iconeComent" href="comentarioForum.html">
+                            <i class="col-12 far fa-comments"></i>
+                        </a>
+                    </div>
+                    <a href="forum.html">
+                        <input class="botComent" type="button" value="Ver tudo" />
+                    </a>
+                </div>
             </div>
-          </div>
         </div>
-        <div class="row titForumInicial">
-          <h2 class="titForum">Fórum</h2>
-          <a href="forum.html">
-            <input class="botForum" type="button" value="Adicionar postagem" />
-          </a>
-        </div>
-        <div class="row encapsular">
-          <div class="rolar">
-            <div class="inicialForum">
-              <h4 class="tituloForumInicial">Leila Carvalho Lima</h4>
-              <h5 class="subtituloForumInicial">Quero virar vegetariana</h5>
-              <p class="mensagemForumInicial">
-                Ano retrasado eu fiquei uma semana sem comer carne, mas os meus
-                pais não estavam colaborando. Agora estou morando sozinha e
-                queria dicas de ingredientes que eu possa substituir pela carne.
-                Me disseram que soja é uma boa!
-              </p>
-              <a class="col-12 iconeComent" href="comentarioForum.html">
-                <i class="col-12 far fa-comments"></i>
-              </a>
-            </div>
-
-            <div class="inicialForum">
-              <h4 class="tituloForumInicial">Estevan Oliveira Gomes</h4>
-              <h5 class="subtituloForumInicial">
-                Meu filho tem intolerância à lactose
-              </h5>
-              <p class="mensagemForumInicial">
-                Ele tem 8 anos e descobrimos depois que passou mal por causa de
-                uma vitamina. Não sei o que fazer! :o #paiDesesperado
-              </p>
-              <a class="col-12 iconeComent" href="comentarioForum.html">
-                <i class="col-12 far fa-comments"></i>
-              </a>
-            </div>
-
-            <div class="inicialForum">
-              <h4 class="tituloForumInicial">Amanda Sousa Rodrigues</h4>
-              <h5 class="subtituloForumInicial">
-                Descobri que tenho diabetes tipo 1
-              </h5>
-              <p class="mensagemForumInicial">
-                Tenho 19 anos e nunca fui muito de doces, mas comia de vez em
-                quando. Fui diagnosticada com diabetes tipo 1 anteontem. Alguém
-                na mesma situação para trocar conhecimentos?
-              </p>
-              <a class="col-12 iconeComent" href="comentarioForum.html">
-                <i class="col-12 far fa-comments"></i>
-              </a>
-            </div>
-            <a href="forum.html">
-              <input class="botComent" type="button" value="Ver tudo" />
-            </a>
-          </div>
-        </div>
-      </div>
     </main>
 
     <script>
-      $('#receitaInicial').html('')
-      var jsonReceitas = window.localStorage.getItem('receitas')
-      var receitas = JSON.parse(jsonReceitas)
+        var jsonReceitas = localStorage.getItem('receitas')
+        var objVindoDoLocalStorage = JSON.parse(jsonReceitas)
 
-      for (i = 0; i < receitas.receitas.length; i++) {
-        var cadaReceita = receitas.receitas[i]
-        $('#receitaInicial').append(`
-                                                <img src="${cadaReceita.urlimagem}" >
-                                                <h6> ${cadaReceita.categoria} </h6>
-                                                <a href="${cadaReceita.categoria}.html"><h3>${cadaReceita.campoTitulo}</h3></a>
-                                            `)
-      }
-      function init() {
-        let tituloReceita = $('#campoTitulo').val()
-        let campoCategorias = $('#categorias').val()
-        let imagemReceita = $('#urlimagem').val()
-        let telaReceita = {
-          imagem: imagemReceita,
-          categoria: campoCategorias,
-          campoTitulo: tituloReceita,
+        for (i = 0; i < objVindoDoLocalStorage.receitas.length; i++) {
+            var receitaAtual = objVindoDoLocalStorage.receitas[i]
+
+            $('#receitaInicial').append(`
+        <div class="receita veio-do-banco">
+                <img src="${receitaAtual.urlimagem}" >
+                <h6> ${receitaAtual.categoria} </h6>
+                <a href="${receitaAtual.categoria}.html">
+                  <h3>${receitaAtual.campoTitulo}</h3>
+                </a>
+            </div>`)
         }
+        /*
+                function init() {
+                    let tituloReceita = $('#campoTitulo').val()
+                    let campoCategorias = $('#categorias').val()
+                    let imagemReceita = $('#urlimagem').val()
+                    let telaReceita = {
+                        imagem: imagemReceita,
+                        categoria: campoCategorias,
+                        campoTitulo: tituloReceita,
+                    }
 
-        receitas.receitas.push(telaReceita)
-        localStorage.setItem('receita', JSON.stringify(receitas))
-      }
-      window.onload = init()
+                    receitas.receitas.push(telaReceita)
+                    localStorage.setItem('receita', JSON.stringify(receitas))
+                }
+                window.onload = init()*/
     </script>
     <script src="script.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
 </html>
